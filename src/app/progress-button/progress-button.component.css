@@ -1,0 +1,20 @@
+.state-text {
+  color: white;
+  vertical-align: super; }
+
+.button-dimension {
+  min-height: 35px;
+  min-width: 112px; }
+
+.icon-fill {
+  fill: #fff; }
+
+.progress-circle {
+  display: inline-block;
+  pointer-events: none; }
+
+ng-md-icon[disabled] {
+  pointer-events: none; }
+
+span[disabled] {
+  pointer-events: none; }
