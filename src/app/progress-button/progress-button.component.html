@@ -1,4 +1,6 @@
 
-<button class="button-dimension" >
-    PROGRESS_BUTTON
+<button class="button-dimension" 
+    [style.background-color]="color()" [disabled]="state.value == 'inprogress' || disabledstate=='true'" >
+    <md-spinner *ngIf="state.value == 'inprogress'" class="progress-circle" color="primary"></md-spinner>
+    <span class="state-text" [attr.disabled]="state.value == 'inprogress' || disabledstate=='true'" >{{text()}}</span>
 </button>
