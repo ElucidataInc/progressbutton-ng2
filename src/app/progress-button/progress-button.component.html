@@ -2,5 +2,8 @@
 <button class="button-dimension" 
     [style.background-color]="color()" [disabled]="state.value == 'inprogress' || disabledstate=='true'" >
     <md-spinner *ngIf="state.value == 'inprogress'" class="progress-circle" color="primary"></md-spinner>
+    <md-icon *ngIf="state.value == 'initial'" class="icon-fill">{{icon}}</md-icon>
+    <md-icon *ngIf="state.value == 'done'" class="icon-fill">check_circle</md-icon>
+    <md-icon *ngIf="state.value == 'error'" class="icon-fill">error</md-icon>
     <span class="state-text" [attr.disabled]="state.value == 'inprogress' || disabledstate=='true'" >{{text()}}</span>
 </button>
