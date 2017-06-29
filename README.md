@@ -1,6 +1,6 @@
 # ProgressbuttonNg2
 
-It is a progress button with different states like initial, inprogress, done and error.
+It is a progress button with different states like `initial` , `inprogress` , `done` and `error`.
 you can easily specify color, text, icon for the button.
 
 ## Install
@@ -24,7 +24,7 @@ you can install this package with npm
 
 3. install package
 
-        npm install @eluci/progress-button --save
+        npm install @eluci/progressbutton-ng2 --save
         
 
 4. import in your project
@@ -42,25 +42,25 @@ you can use progress-button directive in your html template as
 
 1. **state**
 
-    you can specify the state along with its color and text to be displayed for button. you can pass a json
+    you can specify the `state` along with its color and text to be displayed for button. you can pass a json
     object like
 
         stateObject = {
 
             'value': 'initial',
 
-            'text': 'upload', <optional>
+            'text': 'upload', `<optional>`
 
-            'color': '#337ab7'<optional>
+            'color': '#337ab7' `<optional>`
             
         }
 
 2. **icon**
     
-    you can specify icon for initial state. 
+    you can specify `icon` for initial state. 
     
     > icon from [material icons library](https://material.io/icons/) only.
 
 3. **disabledstate**
     
-    you can also disable the button by setting disabledstate true.
+    you can also disable the button by setting `disabledstate` true.
