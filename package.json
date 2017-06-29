@@ -45,5 +45,13 @@
     "ts-node": "~3.0.4",
     "tslint": "~5.3.2",
     "typescript": "~2.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aashish347@bitbucket.org/elucidatainc/progressbutton-ng2.git"
+  },
+  "author": {
+    "name": "Aashish Kumar",
+    "email": "aashish.kumar@elucidata.io"
   }
 }
