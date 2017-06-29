@@ -36,9 +36,9 @@ you can install this package with npm
 
 you can use progress-button directive in your html template as
 
-    ```html
-    <progress-button [state]="stateObject" [disabledstate]="false" icon="publish" ></progress-button>
-    ```
+```html
+<progress-button [state]="stateObject" [disabledstate]="false" icon="publish" ></progress-button>
+```
 
 1. **state**
 
