@@ -1,9 +1,8 @@
-<div style="text-align:center">
-  
-  <progress-button [state]="stateObject[stateNo]" [disabledstate]="isDisabled" [icon]="icon" (click)="toProgressState()"></progress-button>
+<div style="text-align:center"> 
+  <progress-button [state]="stateObject[stateNo]" [disabledstate]="isDisabled" [icon]="icon" (click)="changeState(3)"></progress-button>
   <br><br>
-  <a [style.color]="'#5cb85c'" (click)="toDoneState()">Done</a>
-  <a [style.color]="'#d9534f'" (click)="toErrorState()">Error</a>
-  <a [style.color]="'#337ab7'" (click)="toInitialState()">Initial</a>
-  <a [style.color]="'#a9a9a9'" (click)="toProgressState()">InProgress</a>
+  <a [style.color]="'#5cb85c'" (click)="changeState(1)">Done</a>
+  <a [style.color]="'#d9534f'" (click)="changeState(2)">Error</a>
+  <a [style.color]="'#337ab7'" (click)="changeState(0)">Initial</a>
+  <a [style.color]="'#a9a9a9'" (click)="changeState(3)">InProgress</a>
 </div>
