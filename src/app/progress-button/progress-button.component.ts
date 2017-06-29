@@ -17,11 +17,18 @@ export class ProgressButtonComponent implements OnInit{
       
   }
 
+  /**
+   * @returns void
+   * initializes icon with default icon 'file_upload'
+   */
   ngOnInit(): void {
       this.icon = (this.icon) ? this.icon : 'file_upload';
   }
 
-
+  /**
+   * @returns string
+   * returns state.value as default text if state.text is not defined
+   */
   text(): string {
       if (!this.state.text) {
           return this.state.value;
@@ -29,6 +36,11 @@ export class ProgressButtonComponent implements OnInit{
           return this.state.text;
       }
   }
+  
+  /**
+   * @returns string
+   * returns default color for different states if state.color is not defined
+   */
   color(): string {
       if (!this.state.color) {
           for (let i = 0; i < 4; i++) {
