@@ -43,9 +43,9 @@ export class ProgressButtonComponent implements OnInit{
    */
   color(): string {
       if (!this.state.color) {
-          for (let i = 0; i < 4; i++) {
-              if (this.state.value == this.states[i]) {
-                  return this.defaultColor[i];
+          for (let stateNo = 0; stateNo < 4; stateNo++) {
+              if (this.state.value == this.states[stateNo]) {
+                  return this.defaultColor[stateNo];
               }
           }
           return this.defaultColor[0];
