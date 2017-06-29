@@ -1,6 +1,6 @@
 .state-text {
   color: white;
-  vertical-align: super; }
+}
 
 .button-dimension {
   color: #333;
@@ -45,7 +45,7 @@
   display: inline-block;
   pointer-events: none; }
 
-ng-md-icon[disabled] {
+md-icon[disabled] {
   pointer-events: none; }
 
 span[disabled] {
