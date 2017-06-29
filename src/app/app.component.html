@@ -1,6 +1,9 @@
 <div style="text-align:center">
   
-  <progress-button [state]="state" [disabledstate]="isDisabled" [icon]="icon" (click)="onClick()"></progress-button>
+  <progress-button [state]="stateObject[stateNo]" [disabledstate]="isDisabled" [icon]="icon" (click)="toProgressState()"></progress-button>
+  <br><br>
+  <a [style.color]="'#5cb85c'" (click)="toDoneState()">Done</a>
+  <a [style.color]="'#d9534f'" (click)="toErrorState()">Error</a>
+  <a [style.color]="'#337ab7'" (click)="toInitialState()">Initial</a>
+  <a [style.color]="'#a9a9a9'" (click)="toProgressState()">InProgress</a>
 </div>
-
-
