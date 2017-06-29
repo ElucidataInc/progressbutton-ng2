@@ -1,28 +1,66 @@
 # ProgressbuttonNg2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
+It is a progress button with different states like initial, inprogress, done and error.
+you can easily specify color, text, icon for the button.
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+you can install this package with npm
 
-## Code scaffolding
+1. go to root directory of your project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+2. update npmrc config file
 
-## Build
+    2.1 open npmrc file 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+        vim ~/.npmrc
 
-## Running unit tests
+    2.2 add following lines to npmrc file for setting private and default npm registry
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+        registry=http://registry.npmjs.org/
 
-## Running end-to-end tests
+        @eluci:registry=http://54.245.179.143:81/
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+3. install package
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+        npm install @eluci/progress-button --save
+        
+
+4. import in your project
+
+        import { ProgressButtonModule } from '@eluci/progressbutton-ng2'
+
+
+## How to use
+
+you can use progress-button directive in your html template as
+
+    ```html
+    <progress-button [state]="stateObject" [disabledstate]="false" icon="publish" ></progress-button>
+    ```
+
+1. **state**
+
+    you can specify the state along with its color and text to be displayed for button. you can pass a json
+    object like
+
+        stateObject = {
+
+            'value': 'initial',
+
+            'text': 'upload', <optional>
+
+            'color': '#337ab7'<optional>
+            
+        }
+
+2. **icon**
+    
+    you can specify icon for initial state. 
+    
+    > icon from [material icons library](https://material.io/icons/) only.
+
+3. **disabledstate**
+    
+    you can also disable the button by setting disabledstate true.
