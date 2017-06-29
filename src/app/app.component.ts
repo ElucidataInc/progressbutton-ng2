@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  icon = "publish";
+  state = {
+      value: 'initial',
+      text: 'initial',
+      color: 'blue'
+  };
+  isDisabled = false;
+  onClick():void {
+    console.log("click")
+  }
 }

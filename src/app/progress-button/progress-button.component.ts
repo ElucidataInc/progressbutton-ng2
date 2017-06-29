@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { State } from './state';
 @Component({
   selector: 'progress-button',
@@ -7,13 +7,9 @@ import { State } from './state';
 })
 
 export class ProgressButtonComponent implements OnInit{
-  state: State={
-      value: 'inprogress',
-      text: 'initial',
-      color: 'blue'
-  };
-  icon: string;
-  disabledstate: boolean;
+  @Input() state: State;
+  @Input() icon: string;
+  @Input() disabledstate: boolean;
   states: string[] = ['initial', 'inprogress', 'done', 'error'];
   defaultColor: string[] = ['#337ab7', '#a9a9a9', '#5cb85c', '#d9534f'];
   
