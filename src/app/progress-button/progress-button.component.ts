@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { State } from './state';
+import { State } from '../state';
 @Component({
   selector: 'progress-button',
   templateUrl: './progress-button.component.html',
