@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ProgressButtonModule } from './progress-button.module';
+import { ProgressButtonModule } from './progress-button/progress-button.module';
 
 @NgModule({
   declarations: [
