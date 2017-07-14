@@ -17,6 +17,8 @@ import { State } from '../state';
     </button>
   `,
   styles: [`
+    @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
     .state-text {
         color: white;
     }
