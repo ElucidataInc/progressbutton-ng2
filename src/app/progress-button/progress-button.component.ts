@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { State } from '../state';
 import { template } from './progress-button.component.html';
 import { styles } from './progress-button.component.css';
@@ -11,7 +11,7 @@ import { styles } from './progress-button.component.css';
   ]
 })
 
-export class ProgressButtonComponent implements OnInit{
+export class ProgressButtonComponent{
   @Input() state: State;
   @Input() icon: string;
   @Input() disabledstate: boolean;
@@ -22,13 +22,6 @@ export class ProgressButtonComponent implements OnInit{
       
   }
 
-  /**
-   * @returns void
-   * initializes icon with default icon 'file_upload'
-   */
-  ngOnInit(): void {
-      this.icon = (this.icon) ? this.icon : 'file_upload';
-  }
 
   /**
    * @returns string
