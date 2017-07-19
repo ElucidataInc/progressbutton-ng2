@@ -1,17 +1,17 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MdProgressSpinnerModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MdIconModule} from '@angular/material';
 
-import { ProgressButtonComponent } from './progress-button/progress-button.component'
+import { ProgressButtonComponent } from './progress-button.component'
 
 @NgModule({
   declarations: [
     ProgressButtonComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     MdProgressSpinnerModule,
     MdIconModule
