@@ -1,6 +1,6 @@
 {
   "name": "@eluci/progressbutton-ng2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "bundles/ProgressButtonModule.umd.js",
   "module": "index.js",
